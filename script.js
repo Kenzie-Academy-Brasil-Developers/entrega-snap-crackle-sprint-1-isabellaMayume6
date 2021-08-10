@@ -29,15 +29,15 @@ function primo(n){
 }
 
 function snapCracklePrime (MaxValue) {
-    let retorno=[]
+    let retorno=' '
     for (a=1; a<=MaxValue; a++){
         let nome =''
         if (a%2!==0){
-            nome = 'Snap'+ ', '
+            nome = 'Snap'
         }
         
         if (a%5===0){
-          nome += 'Crackle'+ ', '
+          nome += 'Crackle'
         }
         
         if (primo(a)=== 'Sim'){
@@ -46,8 +46,8 @@ function snapCracklePrime (MaxValue) {
         if (a%2===0 && nome!=='Prime' && a%10!==0){
            nome=a
         }
-        retorno.push(nome)   
+        retorno +=nome + ', '
     }
     return retorno
 }
-document.write(snapCracklePrime(15)) 
+document.write(snapCracklePrime(20)) 
