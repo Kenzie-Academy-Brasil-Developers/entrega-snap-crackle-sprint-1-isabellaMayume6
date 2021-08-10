@@ -33,11 +33,11 @@ function snapCracklePrime (MaxValue) {
     for (a=1; a<=MaxValue; a++){
         let nome =''
         if (a%2!==0){
-            nome = 'Snap'
+            nome = 'Snap'+ ', '
         }
         
         if (a%5===0){
-          nome += 'Crackle'
+          nome += 'Crackle'+ ', '
         }
         
         if (primo(a)=== 'Sim'){
